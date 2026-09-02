@@ -1,0 +1,12 @@
+services:
+  harice-mariam-test-1-1:
+    image: systeodigital/harice-mariam-test-1-1:${IMAGE_TAG:-prod}
+    container_name: harice-mariam-test-1-1
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:2008:2008"
+    environment:
+      PORT: "2008"
+      # Ajoute ici DATABASE_URL, etc. (lues depuis le .env du serveur)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
