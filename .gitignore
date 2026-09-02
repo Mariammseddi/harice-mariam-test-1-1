@@ -1,0 +1,26 @@
+# Dependances
+node_modules/
+
+# Sorties de build
+dist/
+build/
+target/
+.next/
+out/
+.angular/cache/
+
+# Environnement / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
